@@ -1,0 +1,16 @@
+//name
+function validate(id)
+{
+    var regex = /^[a-zA-Z ]{2,30}$/;
+    var ctrl =  document.getElemetnById(id);
+
+    if (regex.test(ctrl.value)) {
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+/^[a-zA-Z ]{2,30}$/
+/^([a-zA-Z ]){2,30}$/
